@@ -37,7 +37,5 @@ class Main {
                 res = res2 - res1 ;
                 System.out.println("Seconds between these two moments of time is: ");
                 System.out.println(res);
-        
-        
     }
 }
