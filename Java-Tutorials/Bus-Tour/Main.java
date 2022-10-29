@@ -3,8 +3,11 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int weight = sc.nextInt();
-        int n = sc.nextInt();
+        System.out.println("Enter bus height: ");
+        int busHeight = sc.nextInt();
+        System.out.println("Enter number of Bridges: ");
+        int noOfBridges = sc.nextInt();
+        int n = noOfBridges;
         int bridge;
 
         String message = "Will not crash";
@@ -12,7 +15,7 @@ class Main {
         for (int i = 1; i <= n; i++) {
             bridge = sc.nextInt();
 
-            if (weight >= bridge) {
+            if (busHeight >= bridge) {
                 message = "Will crash on bridge " + i;
                 break;
             }
